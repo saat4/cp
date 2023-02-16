@@ -102,16 +102,47 @@ class Test{
         }
         System.out.println("NULL");
     }
-    public static void main(String[] args) {
-        head=new Node('a');
-        head.next=new Node('b');
-        head.next.next=new Node('a');
-        head.next.next.next=new Node('c');
-        head.next.next.next.next=new Node('a');
-        head.next.next.next.next.next=new Node('b');
-        head.next.next.next.next.next.next=new Node('a');
-        printList(head);
-        if(isPalindrome(head))
+    public static void main(String[] args){
+        Test list=new Test();
+        list.head=new Node('a');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
+            System.out.println("Is Palindrome");
+        else
+            System.out.println("Not Palindrome");
+        list.head.next=new Node('b');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
+            System.out.println("Is Palindrome");
+        else
+            System.out.println("Not Palindrome");
+        list.head.next.next=new Node('a');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
+            System.out.println("Is Palindrome");
+        else
+            System.out.println("Not Palindrome");
+        list.head.next.next.next=new Node('c');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
+            System.out.println("Is Palindrome");
+        else
+            System.out.println("Not Palindrome");
+        list.head.next.next.next.next=new Node('a');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
+            System.out.println("Is Palindrome");
+        else
+            System.out.println("Not Palindrome");
+        list.head.next.next.next.next.next=new Node('b');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
+            System.out.println("Is Palindrome");
+        else
+            System.out.println("Not Palindrome");
+        list.head.next.next.next.next.next.next=new Node('a');
+        list.printList(head);
+        if(list.isPalindrome(head)!=false)
             System.out.println("Is Palindrome");
         else
             System.out.println("Not Palindrome");
